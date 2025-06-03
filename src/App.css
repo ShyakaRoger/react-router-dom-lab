@@ -1,42 +1,116 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Forms */
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Mailbox List */
+.mailbox-list {
+  padding: 1rem;
+}
+
+.mailboxes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.mailbox-box {
+  border: 1px solid #ddd;
+  padding: 1rem;
   text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mailbox-box:hover {
+  background-color: #f5f5f5;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Mailbox Details */
+.mailbox-details {
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.details-box {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
-.card {
-  padding: 2em;
+.letters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.letter {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
 }
